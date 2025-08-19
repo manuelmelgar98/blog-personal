@@ -19,3 +19,8 @@ src/app/
    ```bash
    git clone https://github.com/manuelmelgar98/blog-personal.git
    cd blog-personal
+
+## Estilos con Tailwind
+TailwindCSS está integrado en este proyecto.  
+- Instalar dependencias: `npm install`  
+- Correr en local: `ng serve`

@@ -1,8 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   standalone: true,
+  imports:[
+    
+  ],
   selector: 'app-posts',
-  template: `<section class="p-4"><h2 class="text-xl font-semibold">Posts</h2></section>`,
+  templateUrl: './posts.component.html',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class PostsComponent {}

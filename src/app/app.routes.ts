@@ -16,11 +16,6 @@ export const routes: Routes = [
         loadComponent: () =>
           import('./modules/posts/posts.component').then(m => m.PostsComponent),
       },
-      {
-        path: 'post/:id',
-        loadComponent: () =>
-          import('./modules/posts/post-detail.component').then(m => m.PostDetailComponent),
-      },
       { path: '', redirectTo: 'posts', pathMatch: 'full' },
       { path: '**', redirectTo: 'posts' },
     ],

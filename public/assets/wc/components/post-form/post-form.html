@@ -1,0 +1,71 @@
+<template id="postFormTemplate">
+    <dialog class="post-form-modal">
+
+        <div class="modal-header">
+            <h2 id="modalTitle">Publicar Post</h2>
+            <button id="closeModalButton" class="close-button">&times;</button>
+        </div>
+
+        <form id="postForm" method="dialog">
+            <input type="hidden" id="postId" name="postId" class="post-id">
+            <div class="floating-label">
+                <input 
+                    type="text" 
+                    id="postTitle" 
+                    class="post-title" 
+                    name="postTitle" 
+                    placeholder="" 
+                    required
+                >
+                <label for="postTitle">Título del Post:</label>
+            </div>
+            <div class="floating-label">
+                <textarea 
+                    id="postContent" 
+                    class="post-content" 
+                    name="postContent" 
+                    placeholder="" 
+                    required
+                ></textarea>
+                <label for="postContent">Contenido del Post</label>
+            </div>
+            <div class="floating-label">
+                <input 
+                    type="text"
+                    id="postCategories"
+                    class="post-categories"
+                    name="postCategories"
+                    placeholder=""
+                >
+                <label for="postCategories">Categorías (separadas por comas)</label>
+            </div>
+            <div class="floating-label">
+                <input 
+                    type="text"
+                    id="postTags"
+                    class="post-tags"
+                    name="postTags"
+                    placeholder=""
+                >
+                <label for="postTags">Etiquetas (separadas por comas)</label>
+            </div>
+            <div class="floating-label">
+                <input 
+                    type="date"
+                    id="postDate"
+                    class="post-date"
+                    name="postDate"
+                    placeholder=""
+                    required
+                >
+                <label for="postDate">Fecha del Post</label>
+            </div>
+        </form>
+
+        <div class="modal-footer">
+            <button type="button" class="btn-secondary" id="cancelButton">Cancelar</button>
+            <button type="submit" class="btn-primary" id="saveButton" form="postForm">Guardar</button>
+        </div>
+
+    </dialog>
+</template>

@@ -6,3 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-text: "Nunito", sans-serif;
+  --font-title: "Caveat", cursive;
+  --card-accent-color: #3b82f6; /* blue-500 */
+  --create-btn-primary-bg: #2563eb;
+  --create-btn-primary-hover-bg: #1d4ed8;
+}

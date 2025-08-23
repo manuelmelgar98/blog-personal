@@ -1,0 +1,7 @@
+services:
+  web:
+    image: blog-frontend:prod
+    container_name: blog-frontend
+    ports:
+      - "8081:80"
+    restart: unless-stopped

@@ -1,0 +1,28 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Prueba 1",
+            "content": "Esta es la primera prueba",
+            "categories": "Prueba",
+            "tags": "Prueba",
+            "date": "07/10/2025"
+        },
+        {
+            "id": 2,
+            "title": "Prueba 2",
+            "content": "Esta es la segunda prueba",
+            "categories": "Prueba",
+            "tags": "Prueba",
+            "date": "07/10/2025"
+        },
+        {
+            "id": 3,
+            "title": "Prueba 3",
+            "content": "Esta es la tercera prueba",
+            "categories": "Prueba",
+            "tags": "Prueba",
+            "date": "07/10/2025"
+        }
+    ]
+}

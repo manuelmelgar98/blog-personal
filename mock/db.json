@@ -1,36 +1,63 @@
 {
-    "categories":[
-        {"id": 1, "name": "Tecnología"},
-        {"id": 2, "name": "Diseño"}
-    ],
-    "tags":[
-        {"id": 1, "name": "Angular"},
-        {"id": 2, "name": "Web Components"}
-    ],
-    "posts": [
-        {
-            "id": "1",
-            "title": "Prueba 1",
-            "content": "Esta es la primera prueba",
-            "date": "07/10/2025",
-            "categories": [1],
-            "tags": [1,2]
-        },
-        {
-            "id": "2",
-            "title": "Prueba 2",
-            "content": "Esta es la segunda prueba",
-            "date": "07/10/2025",
-            "categories": [2],
-            "tags": [1,2]
-        },
-        {
-            "id": "3",
-            "title": "Prueba 3",
-            "content": "Esta es la tercera prueba",
-            "date": "07/10/2025",
-            "categories": [1,2],
-            "tags": [1]
-        }
-    ]
+  "categories": [
+    {
+      "id": "1",
+      "name": "Tecnología"
+    },
+    {
+      "id": "2",
+      "name": "Diseño"
+    }
+  ],
+  "tags": [
+    {
+      "id": "1",
+      "name": "Angular"
+    },
+    {
+      "id": "2",
+      "name": "Web Components"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "Prueba 1",
+      "content": "Esta es la primera prueba",
+      "date": "07/10/2025",
+      "categories": [
+        1
+      ],
+      "tags": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Prueba 2",
+      "content": "Esta es la segunda prueba",
+      "date": "07/10/2025",
+      "categories": [
+        2
+      ],
+      "tags": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Prueba 3",
+      "content": "Esta es la tercera prueba",
+      "date": "07/10/2025",
+      "categories": [
+        1,
+        2
+      ],
+      "tags": [
+        1
+      ]
+    }
+  ]
 }

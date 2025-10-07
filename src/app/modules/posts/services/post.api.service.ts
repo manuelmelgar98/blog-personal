@@ -12,8 +12,23 @@ export class PostApiService {
   private http = inject(HttpClient);
   private baseUrl = `${environment.apiBaseUrl}/posts`;
 
-  getAll(): Observable<Post[]> {
+  getAllPosts(): Observable<Post[]> {
     return this.http.get<Post[]>(this.baseUrl);
   }
+
+  getByIdPost(id: string): Observable<Post> {
+    return this.http.get<Post>(`${this.baseUrl}/${id}`);
+  }
   
+  addPost(post: Post): Observable<Post> {
+    return this.http.post<Post>(`${this.baseUrl}`, post);
+  }
+
+  updatePost(id: string, post: Post): Observable<Post> {
+    return this.http.put<Post>(`${this.baseUrl}/${id}`, post);
+  }
+
+  deletePost(id: string): Observable<Post> {
+    return this.http.delete<Post>(`${this.baseUrl}/${id}`);
+  }
 }

@@ -60,10 +60,10 @@ export class PostCard extends HTMLElement {
         const postTitle = this._shadowRoot.querySelector('.post-title');
         const postContent = this._shadowRoot.querySelector('.post-content-excerpt');
         const postDate = this._shadowRoot.querySelector('.post-date');
-        const postCategories = this._shadowRoot.querySelector('.post-categories');
+        const postCategories = this._shadowRoot.querySelector('.post-castegories');
         const postTags = this._shadowRoot.querySelector('.post-tags');
         if (postImage)
-            postImage.setAttribute('src', '/assets/images/default-user.png');
+            postImage.setAttribute('src', 'assets/images/default-user.png');
         if (postTitle)
             postTitle.textContent = this._postData.title;
         if (postContent)

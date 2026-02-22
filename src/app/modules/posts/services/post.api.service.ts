@@ -16,6 +16,14 @@ export class PostApiService {
     return this.http.get<Post[]>(this.baseUrl);
   }
 
+  getAllCategories(): Observable<{id:number; name:string}[]> {
+  return this.http.get<{id:number; name:string}[]>(`${environment.apiBaseUrl}/categories`);
+  }
+
+  getAllTags(): Observable<{id:number; name:string}[]> {
+    return this.http.get<{id:number; name:string}[]>(`${environment.apiBaseUrl}/tags`);
+  }
+
   getByIdPost(id: string): Observable<Post> {
     return this.http.get<Post>(`${this.baseUrl}/${id}`);
   }
